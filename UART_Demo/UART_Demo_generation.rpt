@@ -1,0 +1,107 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\ant84\Desktop\VHDL Projects\UART_Demo\UART_Demo.qsys" --block-symbol-file --output-directory="C:\Users\ant84\Desktop\VHDL Projects\UART_Demo\UART_Demo" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading UART_Demo/UART_Demo.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 22.1]
+Progress: Parameterizing module clk_50
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 22.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_gen2 [altera_nios2_gen2 22.1]
+Progress: Parameterizing module nios2_gen2
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 22.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pll_0 [altera_pll 22.1]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: UART_Demo.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: UART_Demo.pll_0: The legal reference clock frequency is 5.0 MHz..700.0 MHz
+Info: UART_Demo.pll_0: Able to implement PLL with user settings
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\ant84\Desktop\VHDL Projects\UART_Demo\UART_Demo.qsys" --synthesis=VHDL --output-directory="C:\Users\ant84\Desktop\VHDL Projects\UART_Demo\UART_Demo\synthesis" --family="Cyclone V" --part=5CEBA4F23C7
+Progress: Loading UART_Demo/UART_Demo.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 22.1]
+Progress: Parameterizing module clk_50
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 22.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_gen2 [altera_nios2_gen2 22.1]
+Progress: Parameterizing module nios2_gen2
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 22.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pll_0 [altera_pll 22.1]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: UART_Demo.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: UART_Demo.pll_0: The legal reference clock frequency is 5.0 MHz..700.0 MHz
+Info: UART_Demo.pll_0: Able to implement PLL with user settings
+Info: UART_Demo: Generating UART_Demo "UART_Demo" for QUARTUS_SYNTH
+Info: jtag_uart: Starting RTL generation for module 'UART_Demo_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=UART_Demo_jtag_uart --dir=C:/Users/ant84/AppData/Local/Temp/alt9605_1805445343359115381.dir/0002_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/ant84/AppData/Local/Temp/alt9605_1805445343359115381.dir/0002_jtag_uart_gen//UART_Demo_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'UART_Demo_jtag_uart'
+Info: jtag_uart: "UART_Demo" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: nios2_gen2: "UART_Demo" instantiated altera_nios2_gen2 "nios2_gen2"
+Info: onchip_memory2: Starting RTL generation for module 'UART_Demo_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec C:/intelfpga_lite/22.1std/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/22.1std/quartus/bin64/perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=UART_Demo_onchip_memory2 --dir=C:/Users/ant84/AppData/Local/Temp/alt9605_1805445343359115381.dir/0003_onchip_memory2_gen/ --quartus_dir=C:/intelfpga_lite/22.1std/quartus --verilog --config=C:/Users/ant84/AppData/Local/Temp/alt9605_1805445343359115381.dir/0003_onchip_memory2_gen//UART_Demo_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2: Done RTL generation for module 'UART_Demo_onchip_memory2'
+Info: onchip_memory2: "UART_Demo" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: pll_0: "UART_Demo" instantiated altera_pll "pll_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "UART_Demo" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "UART_Demo" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "UART_Demo" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'UART_Demo_nios2_gen2_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/22.1std/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/22.1std/quartus/bin64//perl/lib -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/22.1std/quartus/sopc_builder/bin -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/22.1std/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=UART_Demo_nios2_gen2_cpu --dir=C:/Users/ant84/AppData/Local/Temp/alt9605_1805445343359115381.dir/0007_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/22.1std/quartus/bin64/ --verilog --config=C:/Users/ant84/AppData/Local/Temp/alt9605_1805445343359115381.dir/0007_cpu_gen//UART_Demo_nios2_gen2_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2023.09.06 01:23:38 (*) Starting Nios II generation
+Info: cpu: # 2023.09.06 01:23:38 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2023.09.06 01:23:38 (*)   Creating all objects for CPU
+Info: cpu: # 2023.09.06 01:23:38 (*)     Testbench
+Info: cpu: # 2023.09.06 01:23:38 (*)     Instruction decoding
+Info: cpu: # 2023.09.06 01:23:38 (*)       Instruction fields
+Info: cpu: # 2023.09.06 01:23:38 (*)       Instruction decodes
+Info: cpu: # 2023.09.06 01:23:38 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2023.09.06 01:23:38 (*)       Instruction controls
+Info: cpu: # 2023.09.06 01:23:38 (*)     Pipeline frontend
+Info: cpu: # 2023.09.06 01:23:38 (*)     Pipeline backend
+Info: cpu: # 2023.09.06 01:23:39 (*)   Generating RTL from CPU objects
+Info: cpu: # 2023.09.06 01:23:39 (*)   Creating plain-text RTL
+Info: cpu: # 2023.09.06 01:23:39 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'UART_Demo_nios2_gen2_cpu'
+Info: cpu: "nios2_gen2" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: nios2_gen2_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: nios2_gen2_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_gen2_data_master_limiter"
+Info: Reusing file C:/Users/ant84/Desktop/VHDL Projects/UART_Demo/UART_Demo/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/ant84/Desktop/VHDL Projects/UART_Demo/UART_Demo/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/ant84/Desktop/VHDL Projects/UART_Demo/UART_Demo/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/ant84/Desktop/VHDL Projects/UART_Demo/UART_Demo/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: UART_Demo: Done "UART_Demo" with 29 modules, 51 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
